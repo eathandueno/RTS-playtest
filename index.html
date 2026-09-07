@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 		<title>RTS Prototype</title>
+		<meta name="rts-source-commit" content="d910e715d9f4ee96eb1ccb8c86ce7d24454a960b">
 		<style>
 html, body, #canvas {
 	margin: 0;
@@ -91,8 +92,7 @@ body {
 }
 		</style>
 		<script>document.addEventListener('DOMContentLoaded', () => { const meta = document.querySelector('meta[name=viewport]'); if (meta) meta.content = 'width=device-width, initial-scale=1, viewport-fit=contain'; document.addEventListener('pointerup', () => { if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || navigator.maxTouchPoints > 1) { if (screen.orientation && screen.orientation.lock) screen.orientation.lock('landscape').catch(() => {}); } }, {once:true}); });</script>
-	<meta name="rts-source-commit" content="ec378e1">
-</head>
+	</head>
 	<body>
 		<canvas id="canvas">
 			Your browser does not support the canvas tag.
@@ -110,7 +110,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":true,"fileSizes":{"index.pck":48303308,"index.wasm":39513091},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":true,"fileSizes":{"index.pck":48316332,"index.wasm":39513091},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
